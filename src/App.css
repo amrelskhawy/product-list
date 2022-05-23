@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 2rem auto;
+  width: 85%;
+}
+hr {
+  height: 4px;
+  border: 0;
+  background-color: #333333;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.75rem;
+
+}
+.products-h1 {
+  font-weight: 600;
+  flex: 1;
+}
+
+select {
+  padding: 0.25rem;
+  width: 100px;
+}
+
+.header .options button {
+  padding: 7px 10px;
+  margin-left: 1rem;
+  background: none;
+  outline: 0;
+  border: 2px solid black;
+  box-shadow: 3px 2px 0 black;
+  cursor: pointer;
+}
+.products-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+  gap: 50px 20px;
+  margin: 3rem 0;
+  
+}
+
+.product {
+  padding: 2.5rem 3.5rem;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border: 3.5px solid;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+.product.checked {
+  background-color: rgb(229, 229, 229);
+}
+.delete-checkbox {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 0.4rem;
+  width: 18px;
+  height: 18px;
+  
+}
+.form {
+  width: 400px;
+  margin: 2rem 0;
+}
+
+.form > div  {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form > div input {
+  padding: 0.3rem;
+  width: 200px;
+}
+
+
+#furniture{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#furniture > div {
+display: flex;
+margin-bottom: 1rem;
+}
+#furniture > div label {
+  flex: .42;
+}
+#furniture > div input {
+  flex: 1;
+}
+
+#furniture , #dvd , #book {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  padding: .8rem;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: .3px;
+  border-top: 3px solid black;
+  position: relative;
+  bottom: -100px;
+}
+
+
